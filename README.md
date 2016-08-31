@@ -38,7 +38,7 @@ go install github.com/Mr-Bruno/goencryption/server
 server
 ```
 
-1.2To verify that the system is running ok introduce the following url in your browser
+1.2 To verify that the system is running ok introduce the following url in your browser
 
 ```
 http://localhost:8080/
