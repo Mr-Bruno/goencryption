@@ -35,6 +35,13 @@ func TestEncodebase64(t *testing.T) {
 
 }
 
+func TestRandomKey(t *testing.T) {
+	key := RandomKey(32)
+	if len(key) != 32 {
+		t.Error("It should generate a key with length 32 and it is ", len(key))
+	}
+}
+
 func TestGetOriginalMessage(t *testing.T) {
 	tests := []struct {
 		inOut string

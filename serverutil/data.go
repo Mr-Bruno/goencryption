@@ -22,7 +22,7 @@ func DecodeBase64(s string) []byte {
 	return data
 }
 
-// Encrypt with specified key (32 bytes)
+// Encrypt with specified key
 func Encrypt(key, text []byte) []byte {
 	block, err := aes.NewCipher(key)
 	if err != nil {
@@ -53,4 +53,17 @@ func Decrypt(key, text []byte) string {
 	cfb := cipher.NewCFBDecrypter(block, iv)
 	cfb.XORKeyStream(text, text)
 	return string(DecodeBase64(string(text)))
+}
+
+//RandomKey geneartes a random key of the size specified
+func RandomKey(KeySize int) []byte {
+
+	b := make([]byte, KeySize)
+
+	_, err := rand.Read(b)
+	if err != nil {
+		panic(err)
+	}
+
+	return b
 }
