@@ -18,27 +18,27 @@ The only prerequisite needed is to have already a default go setup ready.
 
 ### Installing and Running
 
-1. Use the following command to get the full repository
+* Use the following command to get the full repository
 
 ```
 go get github.com/Mr-Bruno/goencryption/...
 ```
 
-2. Use the following command to install the server
+* Use the following command to install the server
 
 ```
 go install github.com/Mr-Bruno/goencryption/server
 ```
 
-3. To get the system running:
+* To get the system running:
 
-3.1 Run the executable in the bin folder
+1.1 Run the executable in the bin folder
 
 ```
 server
 ```
 
-3.2 To verify that the system is running ok introduce the following url in your browser
+1.2To verify that the system is running ok introduce the following url in your browser
 
 ```
 http://localhost:8080/
@@ -64,16 +64,15 @@ And standalone client has been provided as an example on how to use this interfa
 
 ### Installing/Running the standalone client
 
-1. Install it:
+* Install it:
 ```
 go install github.com/Mr-Bruno/goencryption/standaloneclient
 ```
 
-2. Run the standaloneclient binary created in the binary folder:
+* Run the standaloneclient binary created in the binary folder:
 ```
 standaloneclient "123" "MyText"
 ```
-
 
 ## Deployment
 
